@@ -1,0 +1,419 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+/* HEADER */
+
+.encabezado{
+    background-color:#DFE3E8;
+    font-family: 'Roboto Mono';
+    font-weight: 300;    
+    height: 15vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15vh;
+    grid-template-areas:
+    "logo navegacion navegacion";
+}  
+.logo{
+    grid-area: logo;
+    display: flex;
+    padding-left: 10vw;
+    align-items: center;
+} 
+.navegacion{
+    grid-area: navegacion;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    justify-items: right;
+    font-size: 18px;  
+    list-style: none;
+    padding-right: 10vw;        
+}
+.menu li a{
+    padding: 0vw 0vw 0vw 2vw;
+    display: flex;
+    justify-content:flex-end; 
+    list-style: none;   
+    text-decoration: none;
+    color:#23272D;   
+}
+.submenu{
+    display: none;
+    position: absolute;
+}
+.submenu li{
+    display: block;
+    height: auto;
+    padding: 0.5vw 1vw;
+    background-color:#DFE3E8;
+}
+.menu li:hover  ul{
+    display: block;
+    padding-right: 2vw;
+}
+
+
+/*  MAIN  */
+
+.seccion{ 
+    background-image: url(../imagenes/monte_body_02.png);    
+    height: 70vh;
+    width: 100vw;    
+    display: grid;    
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas:
+    "laResidencia novedades"
+    "artistas contacto"
+}
+.seccion a{
+    list-style-type: none;
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    text-decoration: none;    
+    font-size: 30px;
+    color: #DFE3E8 
+}
+.seccion div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.laResidencia{
+    grid-area: laResidencia;
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.novedades{
+    grid-area: novedades;
+    padding-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.artistas{
+    grid-area: artistas;
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contacto{
+    grid-area: contacto;
+    padding-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* FOOTER */
+
+
+.footer{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh;    
+}
+.redesSociales{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    column-gap: 5%;
+    align-items: center;
+    
+}
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 12px;
+}
+
+/* PAGINA ARTISTAS */ 
+
+.articulo h1{
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 24px;
+    padding: 5vh 10vw;
+}
+.articulo h4{
+    font-family: 'Roboto Mono';
+    font-weight: 500;
+    font-size: 18px;
+    padding: 5vh 10vw;
+}
+.articulo img{
+    height: 100%;
+    width: 100%;
+}
+.articulo p{
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5vh 10vw;
+}
+
+
+/* PAGINA LA RESIDENCIA */ 
+
+.cuerpoResidencia{
+    width: 100vw;
+}
+.cuerpoResidencia h1{
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 24px;
+    padding: 5vh 10vw;
+}
+.cuerpoResidencia iframe{
+    width: 80vw;
+    height: 60vh;
+    padding: 5vh 10vw;
+}
+.cuerpoResidencia p{
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5vh 10vw;
+}
+
+
+
+/* PAGINA NOVEDADES */ 
+
+.cuerpoNovedades h1{
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 24px;
+    padding: 5vh 10vw;
+}
+.cuerpoNovedades h4{
+    font-family: 'Roboto Mono';
+    font-weight: 500;
+    font-size: 18px;
+    padding: 5vh 10vw;
+}
+.cuerpoNovedades p{
+    font-family: 'Roboto Mono';
+    color: #DFE3E8;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 4vh 10vw;
+    background-color: #23272D;
+}
+
+/* PAGINA CONTACTO */
+
+
+.formularioContacto article{
+    font-family: 'Roboto Mono';
+    color: #DFE3E8;
+    font-weight: 300;
+    font-size: 16px;    
+    background-color: #23272D;
+    padding: 0% 10%; 
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 20vh 50vh;
+    grid-column-gap:5%;
+    grid-template-areas: 
+    "tituloContacto ubicacion"
+    "form mapa";
+}
+.formularioContacto h1{
+    grid-area: tituloContacto;
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ubicacion{
+    grid-area: ubicacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 24px;    
+}
+.form{
+    grid-area: form;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;       
+}
+.form label{
+    height: 40%      
+}
+.mapa{
+    grid-area: mapa;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        font-size: 12px;
+}
+    .encabezado img{
+        width: 50%;
+}
+    .seccion a{
+        font-family: 'Roboto Mono';
+        font-weight: 300;    
+        font-size: 20px;
+}
+    .redesSociales img{
+        width: 80%;
+        padding: 0%;
+}
+}
+@media screen and (max-width: 600px){
+    .encabezado{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .encabezado img{
+        width: 70%;
+    }
+    .logo{      
+        padding: 0%;
+        justify-content: center;
+    }
+    .navegacion{
+        display: none;
+    }
+    
+    .seccion{
+        display: flex;
+        flex-direction: column;
+        /*align-items: space-around;*/
+        justify-content: space-around;
+        
+    }
+    .seccion a{
+        font-family: 'Roboto Mono';
+        font-weight: 300;    
+        font-size: 20px;
+    }
+    .laResidencia{
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+        font-size: 5%;
+    }
+    .novedades{
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+    }
+    .artistas{
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+    }
+    .contacto{
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+    }
+
+    .redesSociales img{
+        width: 80%;
+        padding: 0%;
+    }
+    .copyright{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: 'Roboto Mono';
+        font-weight: 200;
+        font-size: 10px;
+    }
+    .formularioContacto article{
+        overflow: hidden;
+        padding: 0% 10%; 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 30vh 10vh 40vh;
+        grid-column-gap:5%;
+        grid-template-areas: 
+        "tituloContacto" 
+        "form"
+        "ubicacion"
+        "mapa";
+    }
+}
+@media screen and (max-width: 320px){
+    .menu{
+        font-size: 12px;
+}
+    .encabezado img{
+        width: 50%;
+}
+    .seccion a{
+        font-family: 'Roboto Mono';
+        font-weight: 300;    
+        font-size: 16px;
+    }
+    .footer{
+        padding: 10%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .redesSociales{
+        
+        display: flex;
+        justify-content: center;
+        
+
+    }
+    .redesSociales img{
+        width: 80%;
+        padding: 0%;        
+    }
+    .copyright{
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Mono';
+        font-weight: 200;
+        font-size: 8px;
+    }
+}

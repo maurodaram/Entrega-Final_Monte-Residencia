@@ -1,0 +1,45 @@
+Escritorio grande
+1920x1080
+
+Ordenador portatil medio
+1366x768
+
+movil grande
+720x1280
+
+
+Encabezado
+alto: 90px
+
+padding:
+10px
+160px
+
+Gris web
+#23272D
+rgb(35, 39, 45)
+
+Blanco tiza
+#DFE3E8
+rgb(223, 227, 232)
+
+Tamaño logo
+250x55px
+
+Tipografia: 
+ROBOTO
+ROBOTO MONO
+
+Textos
+Raleway
+Space mono
+
+
+
+nombre toro
+a4
+
+10.000
+
+
+
