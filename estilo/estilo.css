@@ -19,7 +19,7 @@ html{
     grid-template-rows: 15vh;
     grid-template-areas:
     "logo navegacion navegacion";
-}  
+} 
 .logo{
     grid-area: logo;
     display: flex;
@@ -51,6 +51,11 @@ html{
     list-style: none;   
     text-decoration: none;
     color:#23272D;   
+}
+.menu li a:hover {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    color:#23272D; 
 }
 .submenu{
     display: none;
@@ -89,6 +94,12 @@ html{
     font-size: 30px;
     color: #DFE3E8 
 }
+.seccion a:hover {
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    color: #DFE3E8;
+}
+
 .seccion div{
     display: flex;
     flex-wrap: wrap;
