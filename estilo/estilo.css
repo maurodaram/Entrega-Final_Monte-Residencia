@@ -73,10 +73,39 @@ html{
 }
 
 
-/*  MAIN  */
+/* FOOTER */
+
+
+.footer{
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh;    
+}
+.redesSociales{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    column-gap: 5%;
+    align-items: center;
+    
+}
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 12px;
+}
+
+/*  INDEX - MAIN  */
 
 .seccion{ 
     background-image: url(../imagenes/monte_body_02.png);    
+    background-position: top center;
     height: 70vh;
     width: 100vw;    
     display: grid;    
@@ -134,33 +163,6 @@ html{
 }
 
 
-/* FOOTER */
-
-
-.footer{
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-    padding-left: 10vw;
-    padding-right: 10vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15vh;    
-}
-.redesSociales{
-    width: 100%;
-    display: flex;
-    justify-content:flex-start;
-    column-gap: 5%;
-    align-items: center;
-    
-}
-.copyright{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-family: 'Roboto Mono';
-    font-weight: 200;
-    font-size: 12px;
-}
 
 /* PAGINA ARTISTAS */ 
 
