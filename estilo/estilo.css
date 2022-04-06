@@ -1,73 +1,82 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
 
 
 /* HEADER */
 
-.encabezado{
+.encabezado {
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     font-family: 'Roboto Mono';
-    font-weight: 300;    
+    font-weight: 300;
     height: 15vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 15vh;
     grid-template-areas:
-    "logo navegacion navegacion";
-} 
-.logo{
+        "logo navegacion navegacion";
+}
+
+.logo {
     grid-area: logo;
     display: flex;
     padding-left: 10vw;
     align-items: center;
-} 
-.navegacion{
+}
+
+.navegacion {
     grid-area: navegacion;
     width: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: right;
-    
+
 }
-.menu{
+
+.menu {
     display: flex;
     flex-wrap: wrap;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: space-between;
     justify-items: right;
-    font-size: 18px;  
+    font-size: 18px;
     list-style: none;
-    padding-right: 10vw;        
+    padding-right: 10vw;
 }
-.menu li a{
+
+.menu li a {
     padding: 0vw 0vw 0vw 2vw;
     display: flex;
-    justify-content:flex-end; 
-    list-style: none;   
+    justify-content: flex-end;
+    list-style: none;
     text-decoration: none;
-    color:#23272D;   
+    color: #23272D;
 }
+
 .menu li a:hover {
     font-family: 'Roboto Mono';
     font-weight: 400;
-    color:#23272D; 
+    color: #23272D;
 }
-.submenu{
+
+.submenu {
     display: none;
     position: absolute;
 }
-.submenu li{
+
+.submenu li {
     display: block;
     height: auto;
     padding: 0.5vw 1vw;
-    background-color:#DFE3E8;
+    background-color: #DFE3E8;
 }
-.menu li:hover  ul{
+
+.menu li:hover ul {
     display: block;
     padding-right: 2vw;
 }
@@ -76,23 +85,25 @@ html{
 /* FOOTER */
 
 
-.footer{
+.footer {
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     padding-left: 10vw;
     padding-right: 10vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15vh;    
+    grid-template-rows: 15vh;
 }
-.redesSociales{
+
+.redesSociales {
     width: 100%;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     column-gap: 5%;
     align-items: center;
-    
+
 }
-.copyright{
+
+.copyright {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -103,58 +114,64 @@ html{
 
 /*  INDEX - MAIN  */
 
-.seccion{ 
-    background-image: url(../imagenes/monte_body_02.png);    
+.seccion {
+    background-image: url(../imagenes/monte_body_02.png);
     background-position: top center;
     height: 70vh;
-    width: 100vw;    
-    display: grid;    
+    width: 100vw;
+    display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);
     grid-template-areas:
-    "laResidencia novedades"
-    "artistas contacto"
+        "laResidencia novedades"
+        "artistas contacto"
 }
-.seccion a{
+
+.seccion a {
     list-style-type: none;
     font-family: 'Roboto Mono';
     font-weight: 400;
-    text-decoration: none;    
+    text-decoration: none;
     font-size: 30px;
-    color: #DFE3E8 
+    color: #DFE3E8
 }
+
 .seccion a:hover {
     font-family: 'Roboto Mono';
     font-weight: 300;
     color: #DFE3E8;
 }
 
-.seccion div{
+.seccion div {
     display: flex;
     flex-wrap: wrap;
 }
-.laResidencia{
+
+.laResidencia {
     grid-area: laResidencia;
     padding-left: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.novedades{
+
+.novedades {
     grid-area: novedades;
     padding-right: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.artistas{
+
+.artistas {
     grid-area: artistas;
     padding-left: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.contacto{
+
+.contacto {
     grid-area: contacto;
     padding-right: 20%;
     display: flex;
@@ -164,25 +181,28 @@ html{
 
 
 
-/* PAGINA ARTISTAS */ 
+/* PAGINA ARTISTAS */
 
-.articulo h1{
+.articulo h1 {
     font-family: 'Roboto Mono';
     font-weight: 200;
     font-size: 24px;
     padding: 5vh 10vw;
 }
-.articulo h4{
+
+.articulo h4 {
     font-family: 'Roboto Mono';
     font-weight: 500;
     font-size: 18px;
     padding: 5vh 10vw;
 }
-.articulo img{
+
+.articulo img {
     height: 100%;
     width: 100%;
 }
-.articulo p{
+
+.articulo p {
     font-family: 'Roboto Mono';
     font-weight: 300;
     font-size: 16px;
@@ -190,187 +210,250 @@ html{
 }
 
 
-/* PAGINA LA RESIDENCIA */ 
+/* PAGINA LA RESIDENCIA */
 
-.cuerpoResidencia{
-    width: 100vw;
-}
-.cuerpoResidencia h1{
+.cuerpoResidencia h1 {
     font-family: 'Roboto Mono';
     font-weight: 200;
     font-size: 24px;
     padding: 5vh 10vw;
 }
-.cuerpoResidencia iframe{
-    width: 80vw;
-    height: 60vh;
-    padding: 5vh 10vw;
-}
-.cuerpoResidencia p{
+.cuerpoResidencia p {
     font-family: 'Roboto Mono';
     font-weight: 300;
     font-size: 16px;
+    padding: 0vh 10vw;
+}
+
+.container {
+    display: grid;
+    overflow: hidden;
     padding: 5vh 10vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1%;
+    grid-auto-flow: row;
+    width: 80%; 
+    height: auto;
+    grid-template-areas:
+        "foto1 foto2 foto3"
+        "foto4 foto5 foto5"
+        "foto4 foto6 foto7";
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1%;
+    filter:contrast(80%)  
+}
+
+.container img:hover{
+    filter: saturate(120%) contrast(100%);
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.foto5 {
+    grid-area: foto5;
+}
+
+.foto6 {
+    grid-area: foto6;
+}
+
+.foto7 {
+    grid-area: foto7;
 }
 
 
 
-/* PAGINA NOVEDADES */ 
+/* PAGINA NOVEDADES */
+/*NOVEDADES*/
 
-.cuerpoNovedades h1{
+#cuerpoNovedades h1{
     font-family: 'Roboto Mono';
     font-weight: 200;
     font-size: 24px;
-    padding: 5vh 10vw;
+    color: #23272D;
+    padding-bottom: 2%;
 }
-.cuerpoNovedades h4{
-    font-family: 'Roboto Mono';
-    font-weight: 500;
-    font-size: 18px;
+
+#cuerpoNovedades{
+	font-family: 'Roboto Mono';
+	font-weight: 200;
+    font-size: 12px;
     padding: 5vh 10vw;
-}
-.cuerpoNovedades p{
-    font-family: 'Roboto Mono';
     color: #DFE3E8;
-    font-weight: 300;
-    font-size: 16px;
-    padding: 4vh 10vw;
-    background-color: #23272D;
+    border-radius: 10%;
 }
+
+
+#evento{
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
 
 /* PAGINA CONTACTO */
 
 
-.formularioContacto article{
-    font-family: 'Roboto Mono';
-    color: #DFE3E8;
-    font-weight: 300;
-    font-size: 16px;    
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply;
-    padding: 0% 10%; 
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 20vh 50vh;
-    grid-column-gap:5%;
-    grid-template-areas: 
-    "tituloContacto ubicacion"
-    "form mapa";
-}
-.formularioContacto h1{
-    grid-area: tituloContacto;
+.tituloForm {
     font-family: 'Roboto Mono';
     font-weight: 200;
     font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    padding: 5vh 10vw;
 }
-.ubicacion{
-    grid-area: ubicacion;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#formulario div{
     font-family: 'Roboto Mono';
-    font-weight: 200;
-    font-size: 24px;    
-}
-.form{
-    grid-area: form;
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;       
-}
-.form label{
-    height: 40%      
-}
-.mapa{
-    grid-area: mapa;
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;   
+    font-weight: 300;
+    font-size: 14px;
 }
 
-@media screen and (max-width: 768px){
-    .menu{
+#formulario input{
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 12px; 
+}
+#formulario button{
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 4%;
+}
+
+
+
+/* MEDIA QUERIE */
+
+@media screen and (max-width: 768px) {
+    .menu {
         font-size: 12px;
-}
-    .encabezado img{
+    }
+
+    .encabezado img {
         width: 50%;
-}
-    .seccion a{
+    }
+
+    .seccion a {
         font-family: 'Roboto Mono';
-        font-weight: 300;    
+        font-weight: 300;
         font-size: 20px;
-}
-    .redesSociales img{
+    }
+
+    .redesSociales img {
         width: 80%;
         padding: 0%;
+    }
+
 }
-}
-@media screen and (max-width: 600px){
-    .encabezado{
+
+@media screen and (max-width: 600px) {
+    .encabezado {
         width: 100%;
         display: flex;
         justify-content: center;
-        
+
     }
-    .encabezado img{
+
+    .encabezado img {
         width: 70%;
     }
-    .logo{      
+
+    .logo {
         padding: 0%;
         justify-content: center;
     }
-    .navegacion{
+
+    .navegacion {
         display: none;
     }
-    
-    .seccion{
+
+    .seccion {
         display: flex;
         flex-direction: column;
         /*align-items: space-around;*/
         justify-content: space-around;
-        
     }
-    .seccion a{
+    
+    .laResidencia{
+        padding: 0%;
+        justify-content: center;
+}
+
+    .seccion a {
         font-family: 'Roboto Mono';
-        font-weight: 300;    
+        font-weight: 300;
         font-size: 20px;
     }
-    .laResidencia{
-        display: flex;
-        justify-content: center;
-        padding: 0%;
-        font-size: 5%;
+
+
+    .container{
+        display: grid;
+        overflow: hidden;
+        object-fit: cover;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        gap: 0.2%;
+        width: 80%; 
+        height: 30%;
+        grid-template-areas:
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6"
+        "foto7" 
     }
-    .novedades{
-        display: flex;
-        justify-content: center;
-        padding: 0%;
+    .cuerpoResidencia p{
+        font-size: 14px;
+}
+    .container img{
+        width: 100%;
+        height: auto;
+        filter:contrast(100%)  
     }
-    .artistas{
-        display: flex;
-        justify-content: center;
-        padding: 0%;
-    }
-    .contacto{
+
+    .novedades {
         display: flex;
         justify-content: center;
         padding: 0%;
     }
 
-    .redesSociales img{
+    .artistas {
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+    }
+
+    .contacto {
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+    }
+
+    .redesSociales img {
         width: 80%;
         padding: 0%;
     }
-    .copyright{
+
+    .copyright {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -378,51 +461,61 @@ html{
         font-weight: 200;
         font-size: 10px;
     }
-    .formularioContacto article{
+
+    .formularioContacto article {
         overflow: hidden;
-        padding: 0% 10%; 
+        padding: 0% 10%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 10vh 30vh 10vh 40vh;
-        grid-column-gap:5%;
-        grid-template-areas: 
+        grid-column-gap: 5%;
+        grid-template-areas:
+            "tituloContacto"
         "tituloContacto" 
-        "form"
-        "ubicacion"
-        "mapa";
+            "tituloContacto"
+            "form"
+            "ubicacion"
+            "mapa";
     }
 }
-@media screen and (max-width: 320px){
-    .menu{
+
+@media screen and (max-width: 320px) {
+    .menu {
         font-size: 12px;
-}
-    .encabezado img{
+    }
+
+    .encabezado img {
         width: 50%;
-}
-    .seccion a{
+    }
+
+    .seccion a {
         font-family: 'Roboto Mono';
-        font-weight: 300;    
+        font-weight: 300;
         font-size: 16px;
     }
-    .footer{
+
+    .footer {
         padding: 10%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-content: center;
     }
-    .redesSociales{
-        
+
+    .redesSociales {
+
         display: flex;
         justify-content: center;
-        
+
 
     }
-    .redesSociales img{
+
+    .redesSociales img {
         width: 80%;
-        padding: 0%;        
+        padding: 0%;
     }
-    .copyright{
+
+    .copyright {
         padding: 3%;
         display: flex;
         justify-content: center;
