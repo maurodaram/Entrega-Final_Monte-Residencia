@@ -92,9 +92,13 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 15vh;
+    grid-template-areas: 
+    "redesSociales copyright"
+    "mapaSitio mapaSitio";
 }
 
 .redesSociales {
+    grid-area: redesSociales;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -104,6 +108,7 @@ html {
 }
 
 .copyright {
+    grid-area: copyright;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -111,6 +116,44 @@ html {
     font-weight: 200;
     font-size: 12px;
 }
+
+
+.mapaSitio {
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 14px;
+    margin-bottom: 5%;
+    grid-area: mapaSitio;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content:center;
+}
+
+.menuSitio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    justify-items: right;
+    list-style: none;
+
+}
+
+.menuSitio li a{
+    padding: 2vh 2vw;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-decoration: none;
+    color: #23272D;
+}
+
+.submenuSitio {
+    display: none;
+    position: absolute;
+}
+
 
 /*  INDEX - MAIN  */
 
@@ -223,13 +266,13 @@ html {
     font-family: 'Roboto Mono';
     font-weight: 300;
     font-size: 16px;
-    padding: 0vh 10vw;
+    padding: 5vh 10vw;
 }
 
 .container {
     display: grid;
     overflow: hidden;
-    padding: 5vh 10vw;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1%;
@@ -318,7 +361,15 @@ html {
     font-family: 'Roboto Mono';
     font-weight: 200;
     font-size: 24px;
-    padding: 5vh 10vw;
+    margin-top: 10vh;
+    margin-left: 7%;
+}
+.subtituloForm{
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 24px;
+    margin-top: 10vh;
+    padding: 0 2vw;
 }
 
 #formulario div {
@@ -466,6 +517,10 @@ html {
         font-weight: 200;
         font-size: 10px;
     }
+    .mapaSitio{
+        display: flex;
+        font-size: 12px;
+    }
 
     .formularioContacto article {
         overflow: hidden;
@@ -529,4 +584,12 @@ html {
         font-weight: 200;
         font-size: 8px;
     }
+
+    .mapaSitio{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 12px;
+    }
+
 }
