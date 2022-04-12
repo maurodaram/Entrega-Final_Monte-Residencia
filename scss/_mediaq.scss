@@ -1,0 +1,80 @@
+@import "variable";
+
+@media screen and (max-width: 768px) {
+    .encabezado{
+        img{
+            width: 50%
+        }
+        .menu{
+            font-size: 12px;
+        }
+    }
+    .seccion a{
+        font-family: $tipografiaPrincipal;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .redesSociales{
+        img {
+            width: 80%;
+            padding: 0%;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+    .encabezado{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+            .logo{
+                padding: 0%;
+                justify-content: center;
+            }
+            img{
+                width: 70%;
+            }
+            .navegacion{
+                display:none;
+            } 
+    }
+    
+    .seccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        div{
+            display: flex;
+            justify-content: center;
+            padding: 0%;   
+            a{
+                font-family: $tipografiaPrincipal;
+                    ont-weight: 300;
+                font-size: 20px;
+            }    
+        }
+        .laResidencia{
+            justify-content: center;
+            padding-left: 0%;
+        }
+        .novedades {
+            display: flex;
+            justify-content: center;
+            padding-right: 0%;
+        }
+    
+        .artistas {
+            display: flex;
+            justify-content: center;
+            padding: 0%;
+        }
+        .contacto {
+            display: flex;
+            justify-content: center;
+            padding: 0%;
+        }
+    }
+    
+}
