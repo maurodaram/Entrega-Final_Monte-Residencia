@@ -1,0 +1,53 @@
+/*PAGINA ARTISTAS*/
+
+.img--artistas{
+    @include sizes(100%, auto)
+}
+.titulo--artistas{
+    @include text('Roboto Mono', 24px, 200, 5vh 10vw)
+}
+.subtitulo--artistas{
+    @include text('Roboto Mono', 18px, 300, 0vh 10vw 2vh 10vw)
+}
+.parrafo--artistas{
+    @include text('Roboto Mono', 16px, 200, 2vh 10vw 2vh 10vw)
+}
+
+
+h1{  
+    padding: 5vh 10vw;
+    font-family: map-get($estilos, font);
+    color:map-get($estilos, fontcolor1);
+    font-weight: 300; 
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: uppercase;    
+}
+
+.contenedorArt{
+    position: relative;
+    padding-bottom: 1vh;
+        img{
+            width: 100%;
+            filter: brightness(50%);
+        }
+}
+
+.texto-encima{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        a{  
+            font-family: map-get($estilos, font);
+            color:map-get($estilos, fontcolor2);
+            font-size: 18px;
+            list-style: none;
+            text-decoration: none;
+            font-weight: 300;                
+        }
+            a:hover{
+                font-weight: 400;
+            }
+    
+}

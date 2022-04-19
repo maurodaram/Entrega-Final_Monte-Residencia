@@ -1,0 +1,37 @@
+
+
+/* PAGINA CONTACTO */
+
+
+.tituloForm {
+    font-family: map-get($estilos, font);
+    font-weight: 200;
+    font-size: 24px;
+    margin-top: 10vh;
+}
+.subtituloForm{        
+    font-family: map-get($estilos, font);
+    font-weight: 200;
+    font-size: 24px;
+    margin-top: 10vh;
+}
+
+
+#formulario{ 
+    div {
+        font-family: map-get($estilos, font);
+        font-weight: 300;
+        font-size: 14px;
+    }
+    input {
+        font-family: map-get($estilos, font);
+        font-weight: 200;
+        font-size: 12px;
+    }
+    button {
+        font-family: map-get($estilos, font);
+        font-weight: 300;
+        font-size: 14px;
+        margin-top: 4%;
+        }
+}

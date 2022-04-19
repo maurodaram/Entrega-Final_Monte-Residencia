@@ -1,0 +1,26 @@
+
+
+/* PAGINA NOVEDADES */
+
+#cuerpoNovedades {
+    font-family: map-get($estilos, font);
+    font-weight: 200;
+    font-size: 12px;
+    padding: 5vh 10vw;
+    color: #DFE3E8;
+    border-radius: 10%;
+        h1 {
+        font-family: map-get($estilos, font);
+        font-weight: 200;
+        font-size: 24px;
+        color: #23272D;
+        padding-bottom: 2%;
+        }
+        #evento {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+
