@@ -1,0 +1,16 @@
+Aplicando SEO a mi web
+
+1- Modifiqué los titulos de todas las páginas para que comuniquen de forma eficaz el contenido.
+
+2- Agregué keywords en todas las páginas comparando las tendencias en google trends.
+
+3- Agregué meta descripciones en cada página.
+
+4- Agregué información en el atributo "alt" para la accesibilidad web.
+
+5- Modifiqué encabezados para mejorar la estructura jerárquica de la web.
+
+6- Creé un mapa de sitio en el footer.
+
+7- Reemplacé los textos simulados.
+
