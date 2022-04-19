@@ -10,7 +10,7 @@
         }
     }
     .seccion a{
-        font-family: $tipografiaPrincipal;
+        font-family: map-get($estilos, font);
         font-weight: 300;
         font-size: 20px;
     }
@@ -40,7 +40,19 @@
                 display:none;
             } 
     }
-    
+    .contenedorArt{
+            img{
+                width: 300%;
+                height: 100%;
+                overflow:hidden;
+            }
+    }
+    .texto-encima{
+        a{  
+            font-size: 16px;
+            font-weight: 200;                
+        }            
+    }
     .seccion {
         display: flex;
         flex-direction: column;
@@ -50,8 +62,8 @@
             justify-content: center;
             padding: 0%;   
             a{
-                font-family: $tipografiaPrincipal;
-                    ont-weight: 300;
+                font-family: map-get($estilos, font);
+                font-weight: 300;
                 font-size: 20px;
             }    
         }
@@ -70,11 +82,17 @@
             justify-content: center;
             padding: 0%;
         }
+
+
+        }
         .contacto {
             display: flex;
             justify-content: center;
             padding: 0%;
         }
-    }
     
+        .mapaSitio{
+            display: flex;
+            font-size: 12px;
+        } 
 }

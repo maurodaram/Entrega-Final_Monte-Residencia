@@ -1,13 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+/*MAPA*/
 
-html {
-    font-size: 62.5%;
-}
+$estilos:(
+    font: "Roboto Mono",
+    fontcolor1: #23272D,
+    fontcolor2: white,
+    colorGradiente: linear-gradient(to top, #dfe9f3 0%, white 100%),
+)
 
-$colorGradiente: linear-gradient(to top, #dfe9f3 0%, white 100%);
-$tipografiaPrincipal: 'Roboto Mono'; 
-$colorTipografia: #23272D;
-$colorTipografia2: white; 

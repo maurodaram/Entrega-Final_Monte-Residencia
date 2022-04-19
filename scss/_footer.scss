@@ -12,8 +12,6 @@
     grid-template-areas: 
     "redesSociales copyright"
     "mapaSitio mapaSitio";
-
-
         .redesSociales {
             grid-area: redesSociales;
             width: 100%;
@@ -21,17 +19,46 @@
             justify-content: flex-start;
             column-gap: 5%;
             align-items: center;
-
         }
-
         .copyright {
             grid-area: copyright;
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            font-family: 'Roboto Mono';
+            font-family: map-get($estilos, font);
             font-weight: 200;
             font-size: 12px;
         }
-
+        .mapaSitio {
+            font-family: map-get($estilos, font);
+            font-weight: 200;
+            font-size: 16px;
+            margin-bottom: 5%;
+            grid-area: mapaSitio;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;
+                .menuSitio {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    justify-items: right;
+                    list-style: none;
+                        a{
+                            padding-right: 2vw;
+                            padding-bottom: 2vh;
+                            display: flex;
+                            justify-content: flex-end;
+                            list-style: none;
+                            text-decoration: none;
+                            color: #23272D;
+                        }
+                            .submenuSitio {
+                                display: none;
+                                position: absolute;
+                            }
+                }
+        }
 }

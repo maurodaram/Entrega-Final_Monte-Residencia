@@ -1,70 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 @import "variable";
 @import "header";
 @import "footer";
-
-
-
-
-/* MAIN */
-
-.seccion{
-    background-image: url(../imagenes/monte_body_02.png);
-    background-position: top center;
-    height: 70vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 50%);
-    grid-template-areas:
-        "laResidencia novedades"
-        "artistas contacto";
-        div{
-            display: flex;
-            flex-wrap: wrap;
-            a{ 
-                font-family: $tipografiaPrincipal;
-                list-style-type: none;
-                text-decoration: none;
-                font-weight: 400;    
-                font-size: 30px;
-                color: $colorTipografia2;
-                    &:hover{
-                        font-weight: 300;
-                    }
-            }
-        }                                       
-                .laResidencia {
-                    grid-area: laResidencia;
-                    padding-left: 20%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                }
-            
-                .novedades {
-                    grid-area: novedades;
-                    padding-right: 20%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                }
-                
-                .artistas {
-                    grid-area: artistas;
-                    padding-left: 20%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                }
-                
-                .contacto {
-                    grid-area: contacto;
-                    padding-right: 20%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                }
-                
-}
-
+@import "index";
+@import "la-residencia";
+@import "novedades";
+@import "artistas";
+@import "contacto";
+@import "mixins";
 @import "mediaq";

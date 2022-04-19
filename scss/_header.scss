@@ -1,10 +1,9 @@
-@import "mediaq";
 
 /* HEADER */
 
 .encabezado {
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-    font-family: 'Roboto Mono';
+    background-image: map-get($estilos, colorGradiente);
+    font-family: map-get($estilos, font);
     font-weight: 300;
     height: 15vh;
     display: grid;
@@ -43,7 +42,7 @@
                         color: #23272D;
                     }
                         a:hover {
-                            font-family: 'Roboto Mono';
+                            font-family: map-get($estilos, font);
                             font-weight: 400;
                             color: #23272D;
                         }
@@ -58,7 +57,7 @@
                             display: block;
                             height: auto;
                             padding: 0.5vw 1vw;
-                            background-color: white;
+                            background-color: #dfe9f3;
                         }
                 }           
             }
