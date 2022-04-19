@@ -233,6 +233,29 @@ html {
     height: auto;
     object-fit: contain; }
 
+/*PAGINA ARTISTAS*/
+.img--artistas {
+  width: 100%;
+  height: auto; }
+
+.titulo--artistas {
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  font-weight: 200;
+  padding: 5vh 10vw; }
+
+.subtitulo--artistas {
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0vh 10vw 2vh 10vw; }
+
+.parrafo--artistas {
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  font-weight: 200;
+  padding: 2vh 10vw 2vh 10vw; }
+
 h1 {
   padding: 5vh 10vw;
   font-family: "Roboto Mono";
@@ -265,17 +288,17 @@ h1 {
     font-weight: 400; }
 
 /* PAGINA CONTACTO */
-.tituloForm {
+.formulario, .tituloForm, .subtituloForm {
   font-family: "Roboto Mono";
   font-weight: 200;
   font-size: 24px;
-  margin-top: 10vh; }
+  margin-top: 10vh;
+  color: #000000; }
 
 .subtituloForm {
-  font-family: "Roboto Mono";
-  font-weight: 200;
-  font-size: 24px;
-  margin-top: 10vh; }
+  font-weight: 100;
+  color: #050506;
+  text-decoration: underline; }
 
 #formulario div {
   font-family: "Roboto Mono";
@@ -292,29 +315,6 @@ h1 {
   font-weight: 300;
   font-size: 14px;
   margin-top: 4%; }
-
-/*PAGINA ARTISTAS*/
-.img--artistas {
-  width: 100%;
-  height: auto; }
-
-.titulo--artistas {
-  font-family: "Roboto Mono";
-  font-size: 24px;
-  font-weight: 200;
-  padding: 5vh 10vw; }
-
-.subtitulo--artistas {
-  font-family: "Roboto Mono";
-  font-size: 18px;
-  font-weight: 300;
-  padding: 0vh 10vw 2vh 10vw; }
-
-.parrafo--artistas {
-  font-family: "Roboto Mono";
-  font-size: 16px;
-  font-weight: 200;
-  padding: 2vh 10vw 2vh 10vw; }
 
 /*MAPA*/
 @media screen and (max-width: 768px) {

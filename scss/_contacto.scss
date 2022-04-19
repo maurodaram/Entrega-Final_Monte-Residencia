@@ -2,18 +2,22 @@
 
 /* PAGINA CONTACTO */
 
-
-.tituloForm {
+.formulario{
     font-family: map-get($estilos, font);
     font-weight: 200;
     font-size: 24px;
     margin-top: 10vh;
+    color: #000000
+}
+
+.tituloForm{
+    @extend .formulario; 
 }
 .subtituloForm{        
-    font-family: map-get($estilos, font);
-    font-weight: 200;
-    font-size: 24px;
-    margin-top: 10vh;
+    @extend .formulario;
+    font-weight: 100;
+    color: #050506;
+    text-decoration: underline; 
 }
 
 
