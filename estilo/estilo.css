@@ -7,181 +7,104 @@ html {
 
 /*MAPA*/
 /* HEADER */
-.encabezado {
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+.barraNavegacion {
+  min-height: 12vh;
+  padding-left: 9.5vw;
+  padding-right: 10vw;
+  font-family: 'Roboto Mono';
+  font-weight: 200;
+  font-size: 16px; }
+
+.dropdown-menu li {
+  font-size: 14px; }
+
+/* FOOTER */
+#footer {
+  gap: 3vw;
+  padding-top: 6vh; }
+
+#copyright {
+  font-family: 'Roboto Mono';
+  font-weight: 200;
+  font-size: 12px;
+  padding-top: 2vh; }
+
+.mapaSitio {
   font-family: "Roboto Mono";
-  font-weight: 300;
-  height: 15vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 15vh;
-  grid-template-areas: "logo navegacion navegacion"; }
-  .encabezado .logo {
-    grid-area: logo;
-    display: flex;
-    padding-left: 10vw;
-    align-items: center; }
-  .encabezado .navegacion {
-    grid-area: navegacion;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: right; }
-  .encabezado .menu {
+  font-weight: 200;
+  font-size: 16px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  grid-area: mapaSitio;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .mapaSitio .menuSitio {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    justify-items: right;
-    font-size: 18px;
-    list-style: none;
-    padding-right: 10vw; }
-    .encabezado .menu li a {
-      padding: 0vw 0vw 0vw 2vw;
+    justify-items: center;
+    list-style: none; }
+    .mapaSitio .menuSitio a {
+      padding-right: 2vw;
+      padding-bottom: 2vh;
       display: flex;
       justify-content: flex-end;
       list-style: none;
       text-decoration: none;
       color: #23272D; }
-    .encabezado .menu a:hover {
-      font-family: "Roboto Mono";
-      font-weight: 400;
-      color: #23272D; }
-    .encabezado .menu li:hover ul {
-      display: block;
-      padding-right: 2vw; }
-    .encabezado .menu .submenu {
+    .mapaSitio .menuSitio .submenuSitio {
       display: none;
       position: absolute; }
-      .encabezado .menu .submenu li {
-        display: block;
-        height: auto;
-        padding: 0.5vw 1vw;
-        background-color: #dfe9f3; }
-
-/* FOOTER */
-.footer {
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-  padding-left: 10vw;
-  padding-right: 10vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 15vh;
-  grid-template-areas: "redesSociales copyright" "mapaSitio mapaSitio"; }
-  .footer .redesSociales {
-    grid-area: redesSociales;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 5%;
-    align-items: center; }
-  .footer .copyright {
-    grid-area: copyright;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-family: "Roboto Mono";
-    font-weight: 200;
-    font-size: 12px; }
-  .footer .mapaSitio {
-    font-family: "Roboto Mono";
-    font-weight: 200;
-    font-size: 16px;
-    margin-bottom: 5%;
-    grid-area: mapaSitio;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; }
-    .footer .mapaSitio .menuSitio {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: space-between;
-      justify-items: right;
-      list-style: none; }
-      .footer .mapaSitio .menuSitio a {
-        padding-right: 2vw;
-        padding-bottom: 2vh;
-        display: flex;
-        justify-content: flex-end;
-        list-style: none;
-        text-decoration: none;
-        color: #23272D; }
-      .footer .mapaSitio .menuSitio .submenuSitio {
-        display: none;
-        position: absolute; }
 
 /* PAGINA PRINCIPAL */
-.seccion {
-  background-image: url(../imagenes/monte_body_02.png);
-  background-position: top center;
-  height: 70vh;
-  width: 100vw;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 50%);
-  grid-template-areas: "laResidencia novedades" "artistas contacto"; }
-  .seccion div {
-    display: flex;
-    flex-wrap: wrap; }
-    .seccion div a {
-      font-family: "Roboto Mono";
-      list-style-type: none;
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 30px;
-      color: white; }
-      .seccion div a:hover {
-        font-weight: 300; }
-  .seccion .laResidencia {
-    grid-area: laResidencia;
-    padding-left: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; }
-  .seccion .novedades {
-    grid-area: novedades;
-    padding-right: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; }
-  .seccion .artistas {
-    grid-area: artistas;
-    padding-left: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; }
-  .seccion .contacto {
-    grid-area: contacto;
-    padding-right: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; }
+/*MAIN-CARROUSEL*/
+#textCarousel {
+  font-family: 'Roboto Mono';
+  font-weight: 200; }
+  #textCarousel img {
+    background-position: center; }
+  #textCarousel a :hover {
+    opacity: 80%; }
+  #textCarousel h1 {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 0%; }
+  #textCarousel h2 {
+    font-size: 20px; }
+  #textCarousel p {
+    font-size: large;
+    padding-bottom: 2%; }
 
 /* PAGINA LA RESIDENCIA */
 .cuerpoResidencia h1 {
-  font-family: 'Roboto Mono';
+  font-family: "Roboto Mono";
+  color: #23272D;
   font-weight: 200;
   font-size: 24px;
   padding: 5vh 10vw; }
 
 .cuerpoResidencia p {
+  text-align: justify;
   font-family: 'Roboto Mono';
   font-weight: 300;
   font-size: 16px;
-  padding: 5vh 10vw; }
+  padding: 2vh 16%; }
+  .cuerpoResidencia p b {
+    font-weight: 800; }
 
 .container {
   display: grid;
   overflow: hidden;
   margin: 0 auto;
+  padding: 4vh 0vw;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1%;
   grid-auto-flow: row;
-  width: 80%;
+  width: 100%;
   height: auto;
   grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto5" "foto4 foto6 foto7"; }
   .container img {
@@ -215,19 +138,20 @@ html {
   grid-area: foto7; }
 
 /* PAGINA NOVEDADES */
+h1 {
+  font-family: "Roboto Mono";
+  color: #23272D;
+  font-weight: 200;
+  font-size: 24px;
+  padding: 5vh 10vw; }
+
 #cuerpoNovedades {
   font-family: "Roboto Mono";
   font-weight: 200;
   font-size: 12px;
-  padding: 5vh 10vw;
+  padding: 0vh 10vw;
   color: #DFE3E8;
   border-radius: 10%; }
-  #cuerpoNovedades h1 {
-    font-family: "Roboto Mono";
-    font-weight: 200;
-    font-size: 24px;
-    color: #23272D;
-    padding-bottom: 2%; }
   #cuerpoNovedades #evento {
     width: 100%;
     height: auto;
@@ -254,15 +178,17 @@ html {
   font-family: "Roboto Mono";
   font-size: 16px;
   font-weight: 200;
-  padding: 2vh 10vw 2vh 10vw; }
+  padding: 2vh 10vw 2vh 10vw;
+  text-align: justify;
+  margin-top: 2%;
+  margin-bottom: 4%; }
 
 h1 {
   padding: 5vh 10vw;
   font-family: "Roboto Mono";
   color: #23272D;
-  font-weight: 300;
-  font-weight: 200;
   font-size: 24px;
+  font-weight: 200;
   text-transform: uppercase; }
 
 .contenedorArt {
@@ -286,6 +212,11 @@ h1 {
     font-weight: 300; }
   .texto-encima a:hover {
     font-weight: 400; }
+
+.videoAutobuzz {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /* PAGINA CONTACTO */
 .formulario, .tituloForm, .subtituloForm {
@@ -318,30 +249,31 @@ h1 {
 
 /*MAPA*/
 @media screen and (max-width: 768px) {
-  .encabezado img {
-    width: 50%; }
-  .encabezado .menu {
-    font-size: 12px; }
-  .seccion a {
-    font-family: "Roboto Mono";
-    font-weight: 300;
-    font-size: 20px; }
+  /*FOOTER*/
   .redesSociales img {
     width: 80%;
-    padding: 0%; } }
+    padding: 0%; }
+  /*PAGINA INDEX*/
+  #textCarousel p {
+    font-size: medium;
+    padding-bottom: 10%; }
+  /*PAGINA LA RESIDENCIA*/
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "foto5 foto5" "foto4 foto3" "foto4 foto6" "foto1 foto2"; }
+    .container img {
+      filter: contrast(100%); }
+      .container img:hover {
+        filter: contrast(100%); }
+    .container .foto7 {
+      display: none; } }
 
-@media screen and (max-width: 600px) {
-  .encabezado {
-    width: 100%;
-    display: flex;
-    justify-content: center; }
-    .encabezado .logo {
-      padding: 0%;
-      justify-content: center; }
-    .encabezado img {
-      width: 70%; }
-    .encabezado .navegacion {
-      display: none; }
+@media screen and (max-width: 768px) and (max-width: 600px) {
+  /*HEADER + NAV*/
+  .barraNavegacion {
+    font-size: 12px; }
+  /*PAGINA ARTISTAS*/
   .contenedorArt img {
     width: 300%;
     height: 100%;
@@ -349,29 +281,19 @@ h1 {
   .texto-encima a {
     font-size: 16px;
     font-weight: 200; }
-  .seccion {
+  .laResidencia {
+    justify-content: center;
+    padding-left: 0%; }
+  .novedades {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-    .seccion div {
-      display: flex;
-      justify-content: center;
-      padding: 0%; }
-      .seccion div a {
-        font-family: "Roboto Mono";
-        font-weight: 300;
-        font-size: 20px; }
-    .seccion .laResidencia {
-      justify-content: center;
-      padding-left: 0%; }
-    .seccion .novedades {
-      display: flex;
-      justify-content: center;
-      padding-right: 0%; }
-    .seccion .artistas {
-      display: flex;
-      justify-content: center;
-      padding: 0%; }
+    justify-content: center;
+    padding-right: 0%; }
+  .artistas {
+    display: flex;
+    justify-content: center;
+    padding: 0%; } }
+
+@media screen and (max-width: 768px) {
   .contacto {
     display: flex;
     justify-content: center;

@@ -1,64 +1,51 @@
-
 /* FOOTER */
 
 
-.footer {
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-    padding-left: 10vw;
-    padding-right: 10vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15vh;
-    grid-template-areas: 
-    "redesSociales copyright"
-    "mapaSitio mapaSitio";
-        .redesSociales {
-            grid-area: redesSociales;
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            column-gap: 5%;
-            align-items: center;
-        }
-        .copyright {
-            grid-area: copyright;
+#footer {
+    gap: 3vw;
+    padding-top: 6vh;
+}
+
+#copyright {
+    font-family: 'Roboto Mono';
+    font-weight: 200;
+    font-size: 12px;
+    padding-top: 2vh;
+}
+
+.mapaSitio {
+    font-family: map-get($estilos, font);
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    grid-area: mapaSitio;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .menuSitio {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        justify-items: center;
+        list-style: none;
+
+        a {
+            padding-right: 2vw;
+            padding-bottom: 2vh;
             display: flex;
             justify-content: flex-end;
-            align-items: center;
-            font-family: map-get($estilos, font);
-            font-weight: 200;
-            font-size: 12px;
+            list-style: none;
+            text-decoration: none;
+            color: #23272D;
         }
-        .mapaSitio {
-            font-family: map-get($estilos, font);
-            font-weight: 200;
-            font-size: 16px;
-            margin-bottom: 5%;
-            grid-area: mapaSitio;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content:flex-start;
-                .menuSitio {
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: flex-start;
-                    justify-content: space-between;
-                    justify-items: right;
-                    list-style: none;
-                        a{
-                            padding-right: 2vw;
-                            padding-bottom: 2vh;
-                            display: flex;
-                            justify-content: flex-end;
-                            list-style: none;
-                            text-decoration: none;
-                            color: #23272D;
-                        }
-                            .submenuSitio {
-                                display: none;
-                                position: absolute;
-                            }
-                }
+
+        .submenuSitio {
+            display: none;
+            position: absolute;
         }
+    }
 }

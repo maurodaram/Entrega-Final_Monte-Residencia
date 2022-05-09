@@ -2,6 +2,7 @@
 
 /*PAGINA ARTISTAS*/
 
+
 .img--artistas{
     @include sizes(100%, auto)
 }
@@ -12,19 +13,22 @@
     @include text('Roboto Mono', 18px, 300, 0vh 10vw 2vh 10vw)
 }
 .parrafo--artistas{
-    @include text('Roboto Mono', 16px, 200, 2vh 10vw 2vh 10vw)
+    @include text('Roboto Mono', 16px, 200, 2vh 10vw 2vh 10vw);
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 4%;
 }
-
 
 h1{  
     padding: 5vh 10vw;
     font-family: map-get($estilos, font);
-    color:map-get($estilos, fontcolor1);
-    font-weight: 300; 
-    font-weight: 200;
+    color:map-get($estilos, fontcolor1); 
     font-size: 24px;
+    font-weight: 200;
     text-transform: uppercase;    
+        
 }
+
 
 .contenedorArt{
     position: relative;
@@ -52,4 +56,10 @@ h1{
                 font-weight: 400;
             }
     
+}
+
+.videoAutobuzz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

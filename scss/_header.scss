@@ -1,64 +1,16 @@
 
 /* HEADER */
+.barraNavegacion{
+	min-height: 12vh;
+	padding-left: 9.5vw;
+	padding-right: 10vw;
+	font-family: 'Roboto Mono';
+	font-weight: 200;
+	font-size: 16px;
+}
 
-.encabezado {
-    background-image: map-get($estilos, colorGradiente);
-    font-family: map-get($estilos, font);
-    font-weight: 300;
-    height: 15vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 15vh;
-    grid-template-areas:
-        "logo navegacion navegacion";
-    .logo {
-        grid-area: logo;
-        display: flex;
-        padding-left: 10vw;
-        align-items: center;
-    }
-    .navegacion {
-        grid-area: navegacion;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: right;
-    }
-            .menu {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                justify-content: space-between;
-                justify-items: right;
-                font-size: 18px;
-                list-style: none;
-                padding-right: 10vw;
-                    li a{
-                        padding: 0vw 0vw 0vw 2vw;
-                        display: flex;
-                        justify-content: flex-end;
-                        list-style: none;
-                        text-decoration: none;
-                        color: #23272D;
-                    }
-                        a:hover {
-                            font-family: map-get($estilos, font);
-                            font-weight: 400;
-                            color: #23272D;
-                        }
-                            li:hover ul {
-                            display: block;
-                            padding-right: 2vw;
-                            }
-                .submenu{
-                    display: none;
-                    position: absolute;
-                        li {
-                            display: block;
-                            height: auto;
-                            padding: 0.5vw 1vw;
-                            background-color: #dfe9f3;
-                        }
-                }           
-            }
+.dropdown-menu{
+		li{
+			font-size: 14px;
+		}	
 }

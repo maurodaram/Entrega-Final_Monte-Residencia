@@ -1,19 +1,7 @@
 @import "variable";
 
-@media screen and (max-width: 768px) {
-    .encabezado{
-        img{
-            width: 50%
-        }
-        .menu{
-            font-size: 12px;
-        }
-    }
-    .seccion a{
-        font-family: map-get($estilos, font);
-        font-weight: 300;
-        font-size: 20px;
-    }
+@media screen and (max-width: 768px) {  
+    /*FOOTER*/
     .redesSociales{
         img {
             width: 80%;
@@ -21,25 +9,42 @@
         }
     }
 
+    /*PAGINA INDEX*/
+    #textCarousel{
+        p{
+            font-size: medium;
+            padding-bottom: 10%;
+        }
+    }
+    /*PAGINA LA RESIDENCIA*/
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "foto5 foto5"
+        "foto4 foto3"
+        "foto4 foto6"
+        "foto1 foto2";
+            img{
+                filter: contrast(100%);
+                    &:hover{
+                        filter: contrast(100%);
+                    }
+            }
+    .foto7{
+        display: none;
+    }
 }
 
 
 @media screen and (max-width: 600px){
-    .encabezado{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-            .logo{
-                padding: 0%;
-                justify-content: center;
-            }
-            img{
-                width: 70%;
-            }
-            .navegacion{
-                display:none;
-            } 
+    
+    /*HEADER + NAV*/
+    .barraNavegacion{
+        font-size: 12px;
     }
+
+    /*PAGINA ARTISTAS*/
     .contenedorArt{
             img{
                 width: 300%;
@@ -53,20 +58,7 @@
             font-weight: 200;                
         }            
     }
-    .seccion {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        div{
-            display: flex;
-            justify-content: center;
-            padding: 0%;   
-            a{
-                font-family: map-get($estilos, font);
-                font-weight: 300;
-                font-size: 20px;
-            }    
-        }
+
         .laResidencia{
             justify-content: center;
             padding-left: 0%;
@@ -82,7 +74,6 @@
             justify-content: center;
             padding: 0%;
         }
-
 
         }
         .contacto {
