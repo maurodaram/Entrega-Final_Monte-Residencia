@@ -1,7 +1,17 @@
-
+@import "mixins";
 
 /* PAGINA CONTACTO */
 
+
+h1{  
+    padding: 5vh 10vw;
+    font-family: map-get($estilos, font);
+    color:map-get($estilos, fontcolor1); 
+    font-size: 24px;
+    font-weight: 200;
+    text-transform: uppercase;    
+        
+}
 .formulario{
     font-family: map-get($estilos, font);
     font-weight: 200;
@@ -13,15 +23,21 @@
 .tituloForm{
     @extend .formulario; 
 }
-.subtituloForm{        
-    @extend .formulario;
-    font-weight: 100;
-    color: #050506;
-    text-decoration: underline; 
-}
+
 
 
 #formulario{ 
+    img{
+        margin-bottom: 5%;
+        border-radius: 15px;
+    }
+    h2{
+        font-family: map-get($estilos, font);
+        color:map-get($estilos, fontcolor1); 
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 10%; 
+    }
     div {
         font-family: map-get($estilos, font);
         font-weight: 300;

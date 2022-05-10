@@ -1,6 +1,9 @@
 /* FOOTER */
 
-
+footer{
+    background-attachment: fixed;
+    background-color: #f8f9fa;
+}
 #footer {
     gap: 3vw;
     padding-top: 6vh;
@@ -17,8 +20,8 @@
     font-family: map-get($estilos, font);
     font-weight: 200;
     font-size: 16px;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
     grid-area: mapaSitio;
     width: 100%;
     display: flex;

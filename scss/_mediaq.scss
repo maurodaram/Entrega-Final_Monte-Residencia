@@ -1,4 +1,6 @@
 @import "variable";
+@import "mixins";
+
 
 @media screen and (max-width: 768px) {  
     /*FOOTER*/
@@ -10,6 +12,8 @@
     }
 
     /*PAGINA INDEX*/
+    
+    
     #textCarousel{
         p{
             font-size: medium;
@@ -31,11 +35,23 @@
                         filter: contrast(100%);
                     }
             }
+    }
     .foto7{
         display: none;
     }
-}
+    
+    /*PAGINA ARTISTAS*/
+    .img--artistas{
+        @include sizes(300%, 300%);
+        overflow: hidden;
+        transform: translate(-30%, 0%)
+    }
+    .carouselArtistas{
+        padding: 1%;
+    }
+    
 
+}
 
 @media screen and (max-width: 600px){
     
@@ -45,19 +61,19 @@
     }
 
     /*PAGINA ARTISTAS*/
-    .contenedorArt{
+        .contenedorArt{
             img{
-                width: 300%;
+                width: 250%;
                 height: 100%;
                 overflow:hidden;
             }
-    }
-    .texto-encima{
+        }
+        .texto-encima{
         a{  
             font-size: 16px;
             font-weight: 200;                
         }            
-    }
+        }
 
         .laResidencia{
             justify-content: center;
@@ -75,7 +91,7 @@
             padding: 0%;
         }
 
-        }
+        
         .contacto {
             display: flex;
             justify-content: center;
@@ -87,3 +103,4 @@
             font-size: 12px;
         } 
 }
+
